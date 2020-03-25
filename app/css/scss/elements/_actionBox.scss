@@ -1,0 +1,62 @@
+.cg__actionBox {
+	&.cg__actionBox--style1 {
+		background-color: #f8f8f8;
+		padding-top: 0px;
+		padding-bottom: 100px;
+		.cg__actionBox--top {
+			margin-top: -50px;
+		}
+			.cg__actionBox-elem {
+				position: relative;
+				padding: 0;
+				border-radius: 6px;
+				margin-bottom: 20px;
+				background-color: #{$elementsColor};
+				.cg__actionBox-inner {
+					position: relative;
+					padding: 35px;
+					border-radius: 6px;
+					z-index: 30;
+					&:before {
+						position: absolute;
+						content: '';
+						top: -6px;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						display: block;
+						transform: skewY(1.5deg);
+						border-radius: 6px;
+						transform-origin: right top;
+						background-color: #{$elementsColor};
+					}
+					&:after {
+						position: absolute;
+						content: '';
+						background-color: rgba(0,0,0,0.2);
+						width: 90%;
+						height: 30%;
+						display: block;
+						border-radius: 4px;
+						transform: skewY(-2deg);
+						right: 5%;
+						top: -20px;
+						z-index: -1;
+					}
+				}
+				&:before {
+					position: absolute;
+					content: '';
+					width: 30px;
+					height: 32px;
+					display: block;
+					bottom: -6px;
+					left: 20%;
+					border-radius: 4px;
+					transform: skewY(35deg);
+					border-top: 0;
+					background-color: #{$elementsColor};
+				}
+		}
+	}
+}

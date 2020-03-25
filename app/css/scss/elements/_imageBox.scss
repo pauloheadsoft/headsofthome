@@ -1,0 +1,39 @@
+.cg__imageBox {
+	.cg__imageBox-wrapper {
+		position: relative;
+		display: block;
+		.cg__imageBox-imgWrapper {
+			display: block;
+				position: relative;
+				img {
+					display: block;
+					margin: 0 auto;
+					width: 100%;
+					&.cg__imgWidth--auto {
+						width: auto;
+					}
+				}
+		}
+	}
+}
+.cg__imageBox-details {
+	background-color: #f4f4f4;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	.cg__imageBox-title {
+		font-size: 13px;
+		line-height: 26px;
+		font-weight: 700;
+		color: #0a0a0a;
+		text-transform: uppercase;
+	}
+	.cg__imageBox-subtitle {
+		font-size: 13px;
+		line-height: 26px;
+		font-weight: 400;
+		color: #535353;
+		font-family: #{$defaultFont};
+	}
+}

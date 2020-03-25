@@ -1,0 +1,20 @@
+footer {
+	@extend .cg__section;
+	&.cg__scheme--light {
+		color: #535353;
+	}
+	background-color: #1c1c1c;
+	padding-top: 120px;
+	padding-bottom: 100px;
+	p {margin: 0 0 20px;}
+}
+.cg__footer-description {
+		color: rgba(255,255,255,0.35);
+}
+.cg__footer-title {
+	font-size: 13px;
+	line-height: 23px;
+	font-weight: 700;
+	color: #ffffff;
+	margin-top: 0px;
+}

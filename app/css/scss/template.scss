@@ -1,0 +1,38 @@
+
+/*** Variables ***/
+@import 'others/_vars';
+
+/*** Misc settings ***/
+@import 'others/_mixins';
+@import 'others/_animations.scss';
+
+/*** General settings ***/
+@import '_general';
+@import '_site-header';
+@import '_site-footer';
+
+/*** Pages ***/
+@import '_pages';
+@import '_blog';
+
+/*** Elements ***/
+@import 'elements/_accordion';
+@import 'elements/_actionBox';
+@import 'elements/_contactForm';
+@import 'elements/_counterElement';
+@import 'elements/_customMenu';
+@import 'elements/_gridGallery';
+@import 'elements/_iconBox';
+@import 'elements/_imageBox';
+@import 'elements/_latestPosts';
+@import 'elements/_mediaContainer';
+@import 'elements/_newsletter';
+@import 'elements/_rev-slider.scss';
+@import 'elements/_sidebar';
+@import 'elements/_skillsDiagram';
+@import 'elements/_socialIcons';
+@import 'elements/_testimonials';
+@import 'elements/_testimonialSlider';
+@import 'elements/_topButton';
+@import 'elements/verticalTimeline';
+@import 'elements/_videoBox';

@@ -1,0 +1,59 @@
+.cg__newsletter {
+	margin-top: 40px;
+	position: relative;
+	&.cg__newsletter--style1 {
+		display: table;
+		width: 100%;
+		min-height: 300px;
+		height: auto;
+		z-index: 399;
+		position: relative;
+		padding-bottom: 20px;
+		@include mobile {
+			height: 200px;
+		}
+		.cg__bg-overlay {
+			background-color: rgba(23,25,51,1);
+			z-index: 1;
+		}
+		.cg__newsletter-container {
+			position: relative;
+			z-index: 2;
+			display: table-cell;
+			vertical-align: middle;
+			width: calc(100% - 50px);
+			padding-left: 25px;
+			padding-right: 25px;
+			h4 {
+				font-size: 13px;
+				font-weight: 700;
+				color: #fff;
+			}
+			p {
+				font-size: 13px;
+				line-height: 22px;
+				margin: 0 0 20px;
+				color: rgba(255,255,255,0.46);
+			}
+			@include tablet_landscape {
+				width: calc(100%);
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+}
+
+/* newsletter validation */
+.cg__newsletter-message.has-error {background: #e63b42;}
+.cg__newsletter-message.is-valid {background: #3be679;}
+
+.cg__newsletter-message.has-error,
+.cg__newsletter-message.is-valid {
+		margin-top: 10px;
+		color: #fff;
+		padding: 10px 30px;
+		line-height: 22px;
+		border-radius: 3px;
+		@include tablet_landscape {padding: 10px 10px;}
+}

@@ -1,0 +1,15 @@
+/* video box */
+
+.cg__videoBox-bg--overlay {
+	background-color: rgba(51,51,153,0.1);
+	&-style2 {
+		background-color: rgba(29,31,64,0.5);
+	}
+}
+.cg__videoBox-caption {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 2;
+}

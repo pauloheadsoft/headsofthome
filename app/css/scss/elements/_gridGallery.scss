@@ -1,0 +1,105 @@
+.cg__gridGallery {
+	&.cg__gridGallery--cols3 {
+		.cg__gridGallery-item {
+			width: 33.3333%;
+			float: left;
+			position: relative;
+			padding: 0;
+		}
+	}
+	&.cg__gridSlider {
+		width: 100%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		.cg__arrow-left, .cg__arrow-right {
+			position: absolute;
+			top: 0px;
+			margin-top: -40px;
+			@include max_desktop {
+				margin-top: auto;
+				color: #fff;
+				z-index: 2;
+				top: 49%;
+			}
+		}
+		.cg__arrow-left {
+			left: 60px;
+			@include desktop {left: 20px;}
+			@include max_desktop {left: 15px;}
+		}
+		.cg__arrow-right {
+			left: 100px;
+			@include desktop {left: 60px;}
+			@include max_desktop {left: auto; right: 20px;}
+		}
+	}
+	.cg__gridGallery-item {
+		position: relative;
+		overflow: hidden;
+		.cg__gridGallery-link {
+			&:hover {
+				.cg__icon {
+					display: block;
+					opacity: 1;
+					margin-top: 0;
+				}
+				.cg__gridGallery-img {
+					transform: scale(1.1);
+				}
+			}
+			&.sh__zoom--on .cg__gridGallery-img{
+				transition-duration: 2s;
+				transition: transform 0.7s linear;
+			}
+			.cg__gridImg-wrapper {
+				top: 10px;
+				right: 5px;
+				left: 5px;
+				bottom: 10px;
+				width: calc(100% - 10px);
+				height: calc(100% - 20px);
+				display: block;
+				position: relative;
+				overflow: hidden;
+				.cg__gridGallery-img {
+					display: block;
+					width: 100%;
+					height: 100%;
+					position: relative;
+					left: 0;
+					top: 0;
+					object-fit: cover;
+					overflow: hidden;
+				}
+			}
+			.cg__icon {
+				opacity: 0;
+				position: absolute;
+				top: 50%;
+				margin-top: 15px;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				transition: all .25s ease-in-out;
+				border-color: #fff;
+				color: #fff;
+				&.cg__circled-icon {
+					width: 56px;
+					height: 56px;
+					line-height: 56px;
+					display: inline-block;
+					border-radius: 50%;
+					box-sizing: content-box;
+					text-align: center;
+					border: 2px solid currentColor;
+					&:before {
+						line-height: 56px;
+						display: block;
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+}
